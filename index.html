@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fhe's Food Stall </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+     <!-- navigation bar -->
+    <nav class="navbar">
+        <div class="logo">Fhe’s <span>Food Stall</span></div>
+        <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+    </div>
+        <ul class="nav-links">
+           <li><a href="#home" class="active" onclick="showSection('home')">Home</a></li>
+            <li><a href="#menu" onclick="showSection('menu')">Menu</a></li>
+            <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-btn">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
+    <!-- home section -->
+     <section id="home" class="content-section active">
+        <div class="hero">
+            <div class="hero-text">
+                <h1>Your Daily Destination for <span class="highlight">Street Food Perfection.</span></h1>
+                <p>From the satisfying snap of a juicy Footlong to the golden crunch of perfectly seasoned Fries, we bring you the ultimate street food experience. Freshly cooked, budget-friendly, and packed with flavor—it's more than just a snack, it's a mood.</p>
+                <button class="btn-primary" onclick="showSection('menu')">View Menu</button>
+            </div>
+            <div class="hero-image">
+                <img src="images/burfries.png" alt="Burger and Fries">
+            </div>
+        </div>
+
+        <div class="welcome-location">
+            <div class="welcome-img">
+                <img src="images/foodstall.webp" alt="Food Stall">
+            </div>
+            <div class="location-text">
+                <h2>Welcome!</h2>
+                <h1 class="highlight">Location</h1>
+                <p>Block 10 Lot 6 Phase 1K Kasiglahan Village San Jose Rodriguez Rizal</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- menu section -->
+    <section id="menu" class="content-section">
+        <h1 class="section-title highlight">Menu</h1>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <h3>Burger</h3>
+                <img src="images/burger.webp" alt="Burger">
+                <ul>
+                    <li>Regular: ₱15</li>
+                    <li>W/ Cheese: ₱23</li>
+                    <li>W/ Egg: ₱32</li>
+                    <li>W/ Egg & Cheese: ₱37</li>
+                </ul>
+            </div>
+            <div class="menu-card">
+                <h3>Fries</h3>
+                <img src="images/fries.webp" alt="Fries">
+                <ul>
+                    <li>Regular: ₱10</li>
+                    <li>Medium: ₱30</li>
+                    <li>Large: ₱50</li>
+                </ul>
+            </div>
+            <div class="menu-card">
+                <h3>Footlong</h3>
+                <img src="images/footlong.webp" alt="Footlong">
+                <ul>
+                    <li>Regular: ₱35</li>
+                    <li>Half: ₱20</li>
+                    <li>W/ Cheese: ₱45</li>
+                    <li>Half w/ Cheese: ₱25</li>
+                </ul>
+            </div>
+            <div class="menu-card">
+                <h3>Kikiam</h3>
+                <img src="images/kikiam.webp" alt="Kikiam">
+                <ul>
+                    <li>Regular: ₱10</li>
+                    <li>Medium: ₱30</li>
+                    <li>Large: ₱50</li>
+                </ul>
+            </div>
+            <div class="menu-card">
+                <h3>Fishball</h3>
+                <img src="images/fishball.webp" alt="Fishball">
+                <ul>
+                    <li>Regular: ₱10</li>
+                    <li>Medium: ₱30</li>
+                    <li>Large: ₱50</li>
+                </ul>
+            </div>
+            <div class="menu-card">
+                <h3>Pastil</h3>
+                <img src="images/pastil.webp" alt="Pastil">
+                <ul>
+                    <li>Regular: ₱25</li>
+                    <li>W/ Egg: ₱38</li>
+                    <li>W/ Hotdog: ₱40</li>
+                </ul>
+            </div>
+             <div class="menu-card">
+                <h3>Egg Sandwich</h3>
+                <img src="images/egg sandwich.webp" alt="Egg Sandwich">
+                <ul>
+                    <li>Regular: ₱25</li>
+                    <li>W/ Cheese:₱30</li>
+                </ul>
+            </div>
+             <div class="menu-card">
+                <h3>Siomai</h3>
+                <img src="images/siomai.webp" alt="Siomai">
+                <ul>
+                    <li>Regular: ₱20</li>
+                    <li>Medium: ₱40</li>
+                    <li>Large: ₱60</li>
+                </ul>
+            </div>
+             <div class="menu-card">
+                <h3>Squidball</h3>
+                <img src="images/squidball.webp" alt="Squidball">
+                <ul>
+                    <li>Regular: ₱20</li>
+                    <li>Medium: ₱40</li>
+                    <li>Large: ₱60</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact" class="content-section">
+    <div class="contact-container">
+        <div class="contact-visual">
+            <h1 class="highlight">Contact</h1>
+            <img src="images/3images.jpg" alt="Delicious Food">
+        </div>
+        
+        <div class="order-form">
+            <h1>Order <span class="highlight">Now!</span></h1>
+            <form id="foodOrderForm">
+                <textarea id="orderText" placeholder="Type your Fullname, Address, Contact and Orders, and Type of Payment." required></textarea>
+                <button type="submit" class="btn-submit">Submit via Email</button>
+            </form>
+            
+            <div class="social-icons">
+                <a href="https://www.facebook.com/100007866822642/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://m.me/100007866822642/" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
