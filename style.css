@@ -263,7 +263,7 @@ nav {
     background: var(--card-bg);
     border: 2px solid var(--border-color);
     border-radius: 10px;
-    color: var(--text-color);
+    color: var(--border-color);
     padding: 15px;
     margin: 20px 0;
     resize: none;
@@ -333,4 +333,5 @@ nav {
     }
 
 }
+
 
